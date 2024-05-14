@@ -64,7 +64,7 @@ export const SopaLetrasIcon: React.FC<IconSvgProps> = ({
 }
 
 export const FotosyPalabraIcon: React.FC<IconSvgProps> = ({
-  size = 24,
+  size,
   width,
   height,
   ...props

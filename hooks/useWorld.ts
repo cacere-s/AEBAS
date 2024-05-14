@@ -1,3 +1,4 @@
+'use client'
 import createGlobe from 'cobe'
 import { MutableRefObject, useEffect, useRef } from 'react'
 

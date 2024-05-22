@@ -1,4 +1,6 @@
+import { fontPoetsenOne } from '@/config/fonts'
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button } from '@nextui-org/react'
+import clsx from 'clsx'
 
 export default function AlphabetSoupGame ({ isOpen, onOpenChange }: { isOpen: boolean, onOpenChange: () => void }) {
   return (
@@ -7,7 +9,7 @@ export default function AlphabetSoupGame ({ isOpen, onOpenChange }: { isOpen: bo
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className='flex flex-col gap-1'>Sopa de letras</ModalHeader>
+              <ModalHeader className={clsx('flex flex-col gap-1 tracking-wider', fontPoetsenOne.className)}>SOPA DE LETRA</ModalHeader>
               <ModalBody>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

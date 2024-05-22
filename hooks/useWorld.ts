@@ -14,19 +14,19 @@ export function useCobe () {
       height: 850,
       phi: 0,
       theta: 0,
-      dark: 1,
+      dark: 0,
       diffuse: 1,
       mapSamples: 16000,
       mapBrightness: 4,
-      baseColor: [0.3, 0.3, 0.4],
-      markerColor: [1, 1, 1],
+      baseColor: [1, 1, 1],
+      markerColor: [0, 0, 0],
       glowColor: [0.2, 0.2, 0.25],
       markers: [
         // longitude latitude
-        { location: [6.25184, -75.56359], size: 0.05 },
-        { location: [57.78, -122.412], size: 0.05 },
-        { location: [52.52, 13.405], size: 0.05 },
-        { location: [35.676, 139.65], size: 0.05 }
+        { location: [6.25184, -75.56359], size: 0.07 },
+        { location: [57.78, -122.412], size: 0.07 },
+        { location: [52.52, 13.405], size: 0.07 },
+        { location: [35.676, 139.65], size: 0.07 }
       ],
       onRender: (state) => {
         // Called on every animation frame.

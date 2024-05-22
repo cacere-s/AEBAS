@@ -2,7 +2,10 @@
 import PhotoWord from './games/photo_word/photoWord'
 import Questions from './games/questions/questions'
 import AlphabetSoup from './games/alphabet_sout/alphabetSoup'
-import LieOrTrut from './games/lie_or_truth/lieOrTruth'
+import GameButton from './GameButton'
+import { fontPoetsenOne } from '@/config/fonts'
+import clsx from 'clsx'
+import { LightbulbIcon } from './icons'
 
 export default function GamesGrip () {
   return (
@@ -19,9 +22,15 @@ export default function GamesGrip () {
         <PhotoWord />
       </section>
 
-      <section className='w-full h-full animate-fade-left animate-duration-[2000ms]'>
-        <LieOrTrut />
-      </section>
+      <GameButton color='bg-gradient-to-tr from-indigo-500 to-blue-600 ' href='/games/lieortruth' animate='animate-fade-left'>
+        <LightbulbIcon className='svg' />
+        <h1 className={clsx(
+          'text-lg font-medium textShadow',
+          fontPoetsenOne.className
+        )}
+        >Dos <span className='text-red-500'>mentiras</span>  y una <span className='text-green-500'>verdad</span>
+        </h1>
+      </GameButton>
     </section>
   )
 }

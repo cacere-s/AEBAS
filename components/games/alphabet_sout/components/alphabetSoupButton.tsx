@@ -8,7 +8,7 @@ export default function AlphabetSoupButton ({ onOpen }: { onOpen: () => void }) 
     <Button
       onPress={onOpen} className={clsx(
         'w-full h-full rounded-2xl p-4 flex flex-col justify-around items-center text-center cursor-pointer',
-        'bg-gradient-to-bl from-neutral-900 to-zinc-900',
+        'bg-gradient-to-bl from-indigo-200 to-blue-200',
         'transition ease-in-out hover:scale-105 duration-300'
       )}
     >
